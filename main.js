@@ -28,7 +28,7 @@ class Binance extends utils.Adapter {
      * Is called when databases are connected and adapter received configuration.
      */
     async onReady() {
-        this.log.info('ready');
+        this.log.info('ready - modified version');
 
         // trigger main method in configured interval
         this.intervalHandle = setInterval(this.main.bind(this), this.config.interval);
